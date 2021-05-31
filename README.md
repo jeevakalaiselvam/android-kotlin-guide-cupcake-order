@@ -1,4 +1,4 @@
-# Cupcake app
+# Cupcake Order
 
 This is a simple food ordering application implementing advanced navigation components
 
