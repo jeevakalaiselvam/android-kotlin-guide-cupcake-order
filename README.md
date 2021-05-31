@@ -1,6 +1,6 @@
 # Cupcake Order
 
-This is a simple food ordering application implementing advanced navigation components
+This is a simple food ordering application implementing advanced android concepts
 
 ## Components uses
 
