@@ -37,9 +37,16 @@ class FlavorFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.apply {
+            lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel //Setup viewModel from XML for Data Binding to sharedViewModel declared above through delegation
-            nextButton.setOnClickListener { goToNextScreen() }
+            flavorFragment = this@FlavorFragment
         }
+    }
+
+    //Reset the ViewModel data and goto Start Fragment
+    fun cancelOrder() {
+        sharedViewModel.resetOrder()
+        findNavController().navigate(R.id.action_flavorFragment_to_startFragment)
     }
 
     /**
